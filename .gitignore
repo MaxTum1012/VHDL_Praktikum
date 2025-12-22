@@ -1,0 +1,4 @@
+# Ignore Vivado generated files
+project.wpc
+VHDL_prakt.lpr
+VHDL_prakt.xpr
