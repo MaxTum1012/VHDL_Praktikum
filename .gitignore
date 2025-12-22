@@ -2,3 +2,7 @@
 project.wpc
 VHDL_prakt.lpr
 VHDL_prakt.xpr
+VHDL_prakt.sim/
+VHDL_prakt.cache/
+VHDL_prakt.hw/
+VHDL_prakt.runs/
