@@ -6,3 +6,6 @@ VHDL_prakt.sim/
 VHDL_prakt.cache/
 VHDL_prakt.hw/
 VHDL_prakt.runs/
+*.json
+*.jou
+*.log
