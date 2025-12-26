@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Declaring entity with port map configuration
 entity sn_cnt is
   Port (clk, res, enable : in std_logic; 
-        cnt_0, cnt_1, cnt_2 : out std_logic
+        cnt : out std_logic_vector(2 downto 0)
                 );    
 end sn_cnt;
 
@@ -48,6 +48,6 @@ or1 : entity work.my_or2(or2behav)
         port map (a => and2_sig, b => and3_sig, y => d2_sig);
 
 --assigning output ports to Top Level Entity sn_cnt
-cnt_0 <= q0_sig; cnt_1 <= q1_sig; cnt_2 <= q2_sig;
+cnt <= q2_sig & q1_sig & q0_sig;     --Concatenation of cnt output signals (2 downto 0)
 
 end RTL;
