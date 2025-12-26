@@ -12,7 +12,7 @@ end sn_cnt;
 architecture RTL of sn_cnt is
 --signal declaration
 signal d1_sig, d2_sig, q0_sig, q1_sig, q2_sig, qb0_sig, qb1_sig, qb2_sig : std_logic := '0'; --no d0 needed because of feedback with qb0
-signal and0_sig, and1_sig, and2_sig, and3_sig, nand0_sig : std_logic := '0';     -- no or-outp-signal because of d = or_outp
+signal and0_sig, and1_sig, and2_sig, and3_sig, nand0_sig : std_logic := '0';                 -- no or-outp-signal because of d = or_outp
 begin
 --component declaration from my_comps.vhd
 --FlipFlop component declarations

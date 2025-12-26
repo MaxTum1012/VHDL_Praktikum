@@ -8,10 +8,9 @@ end sn_cnt_TB;
 
 
 architecture Behavioral of sn_cnt_TB is
---declaration of Test signals
+--declaration of signals
 signal clk_sig, res_sig, enable_sig : std_logic := '0';
 signal cnt_sig : std_logic_vector(2 downto 0) := (others => '0');
-
 begin
 
 StimGen : entity work.stim_gen(clk_gen_behav)
