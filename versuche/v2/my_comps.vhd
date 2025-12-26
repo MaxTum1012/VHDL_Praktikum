@@ -63,7 +63,7 @@ ENTITY my_dff_re IS
 END my_dff_re;
 
 ARCHITECTURE behav OF my_dff_re IS
-    SIGNAL q_int : std_logic;
+    SIGNAL q_int : std_logic := '0';
 BEGIN
     PROCESS(clk)
     BEGIN
