@@ -47,7 +47,7 @@ or0 : entity work.my_or2(or2behav)
 or1 : entity work.my_or2(or2behav)
         port map (a => and2_sig, b => and3_sig, y => d2_sig);
 
---assigning output ports to Top Level Entity sn_cnt
+--assigning output ports of Top Level Entity sn_cnt
 cnt <= q2_sig & q1_sig & q0_sig;     --Concatenation of cnt output signals (2 downto 0)
 
 end RTL;

@@ -13,6 +13,7 @@ architecture RTL of aal1_gen is
 signal SN_sig : std_logic_vector(2 downto 0) := (others => '0');
 signal SNP_sig : std_logic_vector(3 downto 0) := (others => '0');
 signal CSI_sig : std_logic := '0';
+signal aal1_sig : std_logic_vector(7 downto 0) := (others => '0');
 begin
 counter : entity work.sn_cnt(RTL)
           port map(clk => clk, res => res, enable => cnt_enab, cnt => SN_sig);
@@ -20,7 +21,8 @@ counter : entity work.sn_cnt(RTL)
 CRCGen: entity work.aal1_crc_gen(Behavioral)
            port map (CSI => '0', SN => SN_sig, SNP => SNP_sig);     
            
-aal1 <= CSI_sig & SN_sig & SNP_sig;     --output signal of AAL1
+aal1_sig <= CSI_sig & SN_sig & SNP_sig;     --output signal of AAL1
+aal1 <= aal1_sig;
 
 end RTL;
 
