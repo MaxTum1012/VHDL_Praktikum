@@ -23,18 +23,21 @@ ARCHITECTURE struct OF ingress IS
 		head_data : OUT std_logic_vector(7 DOWNTO 0);
 		hg_done : OUT std_logic);
 	END COMPONENT;
+	
 	COMPONENT aal1_gen
 	  PORT (clk : IN std_logic;
 	  	cnt_enab : IN std_logic;
 		res : IN std_logic;
 		aal1 : OUT std_logic_vector(7 DOWNTO 0));
 	END COMPONENT;
+	
 	COMPONENT sp_conv
 	  PORT (d_in : IN std_logic;
 	  	clk : IN std_logic;
 		res : IN std_logic;
 	        d_out : OUT std_logic_vector(7 DOWNTO 0));
 	END COMPONENT;
+	
 	COMPONENT ctl_in
 	  PORT(	clk : IN std_logic;
 	  	res : IN std_logic;

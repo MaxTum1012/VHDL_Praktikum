@@ -1,21 +1,27 @@
+--created by Max Biricz
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL ;
+use ieee.numeric_std.all;
 
 ENTITY sp_conv IS
-  PORT (d_in, clk, res : IN std_logic;
-        d_out : OUT std_logic_vector(7 DOWNTO 0));
+  PORT (d_in, clk, res : IN std_logic;              --d_in is data
+        d_out : out std_logic_vector(7 DOWNTO 0));
 END sp_conv;
   
-ARCHITECTURE behav OF sp_conv IS
-    SIGNAL internal_reg : std_logic_vector(7 DOWNTO 0);
-BEGIN
-  r: PROCESS (clk)
-  BEGIN
-  	IF clk'EVENT AND clk='1' THEN
-
-		-- Fill in here
-
-	END IF;
-  END PROCESS r;
+architecture behav of sp_conv is
+    signal internal_reg : std_logic_vector(7 downto 0) := (others => '0');
+    signal temp_bit : std_logic := '0';
+begin
+  r: process (clk)
+  begin
+  	if clk'event and clk='1' then
+        if res = '1' then
+            internal_reg <= (others => '0');
+        else
+            temp_bit <= d_in;
+            internal_reg(7 downto 0) <= internal_reg(6 downto 0) & temp_bit;
+        end if;
+	end if;
+  end process r;
   d_out <= internal_reg;
-END behav ;
+end behav ;
