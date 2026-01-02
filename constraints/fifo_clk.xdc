@@ -6,4 +6,5 @@
 #
 #################################################################
 
-
+create_clock -period 10.000 -name clk -waveform {5.000 10.000} [get_nets clk_in]
+create_clock -period 10.000 -name clk -waveform {2.500 7.500} [get_nets clk_out]

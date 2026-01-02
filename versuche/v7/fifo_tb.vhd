@@ -12,14 +12,18 @@ ARCHITECTURE stimul OF fifo_tb IS
 	SIGNAL clk1,clk2,res :std_logic := '0';
 	SIGNAL we,re :std_logic := '0';
 	SIGNAL full,empty,lr : std_logic;
-	SIGNAL data1, data2 : std_logic_vector (7 DOWNTO 0):="00000000";
+	SIGNAL data1, data2 : std_logic_vector (7 DOWNTO 0):="00000000";       --MB: data_in = data_1, data_out = data_2
 	CONSTANT t1 : time := 25 ns;
 	CONSTANT t2 : time := 40 ns;
 	
 BEGIN
 
 	-- Component instantiation
-	mut: ...
+	mut: entity work.fifo(Behavioral)
+	     port map (data_in => data1, data_out => data2,
+	               we => we, re => re, res => res, 
+	               clk_in => clk1, clk_out => clk2, 
+	               empty => empty, full => full, level_reached => lr);
 
 	c1: PROCESS
 	BEGIN
