@@ -17,7 +17,7 @@ end fifo;
 architecture Behavioral of fifo is
 --subtype and type of Memory
 subtype Byte is std_logic_vector(7 downto 0);
-subtype MemAddrType is integer range 2**ld_depth-1 downto 0;
+subtype MemAddrType is integer range 2**ld_depth - 1 downto 0;
 type MemType is array(MemAddrType) of Byte;
 --subtype of pointers
 subtype PtrType is std_logic_vector(ld_depth downto 0);             --length of write_data1 : 1 + log_2(N)
