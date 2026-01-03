@@ -26,7 +26,7 @@ ARCHITECTURE stimul OF pack_tb IS
 	SIGNAL set_header : std_logic := '0'; 
 	SIGNAL ready : std_logic;
 
-	CONSTANT td : time := 50 ns;
+	CONSTANT td : time := 14 ns;
 	CONSTANT tnet : time := 100 ns;
 
 BEGIN

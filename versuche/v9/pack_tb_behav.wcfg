@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pack_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="pack_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="162784000000fs"></ZoomStartTime>
+      <ZoomEndTime time="164488000001fs"></ZoomEndTime>
+      <Cursor1Time time="171400000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/pack_tb/mut/d_clk" type="logic">
+      <obj_property name="ElementShortName">d_clk</obj_property>
+      <obj_property name="ObjectShortName">d_clk</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/net_clk" type="logic">
+      <obj_property name="ElementShortName">net_clk</obj_property>
+      <obj_property name="ObjectShortName">net_clk</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/res" type="logic">
+      <obj_property name="ElementShortName">res</obj_property>
+      <obj_property name="ObjectShortName">res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/set_header" type="logic">
+      <obj_property name="ElementShortName">set_header</obj_property>
+      <obj_property name="ObjectShortName">set_header</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/data" type="logic">
+      <obj_property name="ElementShortName">data</obj_property>
+      <obj_property name="ObjectShortName">data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/cell_start" type="logic">
+      <obj_property name="ElementShortName">cell_start</obj_property>
+      <obj_property name="ObjectShortName">cell_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/cell_clk" type="logic">
+      <obj_property name="ElementShortName">cell_clk</obj_property>
+      <obj_property name="ObjectShortName">cell_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/we_fifo_sig" type="logic">
+      <obj_property name="ElementShortName">we_fifo_sig</obj_property>
+      <obj_property name="ObjectShortName">we_fifo_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/re_fifo_sig" type="logic">
+      <obj_property name="ElementShortName">re_fifo_sig</obj_property>
+      <obj_property name="ObjectShortName">re_fifo_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/empty_sig" type="logic">
+      <obj_property name="ElementShortName">empty_sig</obj_property>
+      <obj_property name="ObjectShortName">empty_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/full_sig" type="logic">
+      <obj_property name="ElementShortName">full_sig</obj_property>
+      <obj_property name="ObjectShortName">full_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/level_reached_sig" type="logic">
+      <obj_property name="ElementShortName">level_reached_sig</obj_property>
+      <obj_property name="ObjectShortName">level_reached_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/head_in" type="array">
+      <obj_property name="ElementShortName">head_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">head_in[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/fifo_in_sig" type="array">
+      <obj_property name="ElementShortName">fifo_in_sig[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_in_sig[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/fifo_out_sig" type="array">
+      <obj_property name="ElementShortName">fifo_out_sig[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_out_sig[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/fifo/Mem" type="array">
+      <obj_property name="ElementShortName">Mem[127:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem[127:0][7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pack_tb/mut/atm_data" type="array">
+      <obj_property name="ElementShortName">atm_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">atm_data[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group188" type="group">
+      <obj_property name="label">AAL1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/pack_tb/mut/ingress/aal/aal1_sig" type="array">
+         <obj_property name="ElementShortName">aal1_sig[7:0]</obj_property>
+         <obj_property name="ObjectShortName">aal1_sig[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pack_tb/mut/ingress/aal/aal1" type="array">
+         <obj_property name="ElementShortName">aal1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">aal1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pack_tb/mut/ingress/aal/SNP_sig" type="array">
+         <obj_property name="ElementShortName">SNP_sig[3:0]</obj_property>
+         <obj_property name="ObjectShortName">SNP_sig[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pack_tb/mut/ingress/aal/SN_sig" type="array">
+         <obj_property name="ElementShortName">SN_sig[2:0]</obj_property>
+         <obj_property name="ObjectShortName">SN_sig[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

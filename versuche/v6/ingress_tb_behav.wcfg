@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="41222250000fs"></ZoomStartTime>
-      <ZoomEndTime time="42210750001fs"></ZoomEndTime>
-      <Cursor1Time time="41425250000fs"></Cursor1Time>
+      <ZoomStartTime time="39413706411fs"></ZoomStartTime>
+      <ZoomEndTime time="40473604918fs"></ZoomEndTime>
+      <Cursor1Time time="41450000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
       <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/ingress_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -58,10 +58,6 @@
       <obj_property name="ObjectShortName">fifo_data[7:0]</obj_property>
       <obj_property name="CustomSignalColor">#FF0000</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ingress_tb/CLOCK_HALF_PERIOD" type="other">
-      <obj_property name="ElementShortName">CLOCK_HALF_PERIOD</obj_property>
-      <obj_property name="ObjectShortName">CLOCK_HALF_PERIOD</obj_property>
    </wvobject>
    <wvobject fp_name="group226" type="group">
       <obj_property name="label">SP-Conv</obj_property>

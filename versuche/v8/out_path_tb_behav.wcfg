@@ -10,9 +10,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1987800000fs"></ZoomStartTime>
-      <ZoomEndTime time="2185400001fs"></ZoomEndTime>
-      <Cursor1Time time="3368533000fs"></Cursor1Time>
+      <ZoomStartTime time="2266990000fs"></ZoomStartTime>
+      <ZoomEndTime time="2464590001fs"></ZoomEndTime>
+      <Cursor1Time time="2350000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="207"></NameColumnWidth>
@@ -38,6 +38,14 @@
       <wvobject fp_name="/out_path_tb/cell_clk" type="logic">
          <obj_property name="ElementShortName">cell_clk</obj_property>
          <obj_property name="ObjectShortName">cell_clk</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/lzg_start" type="logic">
+         <obj_property name="ElementShortName">lzg_start</obj_property>
+         <obj_property name="ObjectShortName">lzg_start</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject fp_name="/out_path_tb/mut/level_reached" type="logic">
          <obj_property name="ElementShortName">level_reached</obj_property>
@@ -54,6 +62,8 @@
       <wvobject fp_name="/out_path_tb/mut/cell_start_delayed" type="logic">
          <obj_property name="ElementShortName">cell_start_delayed</obj_property>
          <obj_property name="ObjectShortName">cell_start_delayed</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
       </wvobject>
       <wvobject fp_name="/out_path_tb/mut/fifo_data" type="array">
          <obj_property name="ElementShortName">fifo_data[7:0]</obj_property>
@@ -95,10 +105,6 @@
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          <obj_property name="CustomSignalColor">#FF00FF</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject fp_name="/out_path_tb/mut/lzg_start" type="logic">
-         <obj_property name="ElementShortName">lzg_start</obj_property>
-         <obj_property name="ObjectShortName">lzg_start</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>
