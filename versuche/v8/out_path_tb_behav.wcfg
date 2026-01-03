@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="out_path_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="out_path_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1987800000fs"></ZoomStartTime>
+      <ZoomEndTime time="2185400001fs"></ZoomEndTime>
+      <Cursor1Time time="3368533000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">out_path</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/out_path_tb/mut/net_clk" type="logic">
+         <obj_property name="ElementShortName">net_clk</obj_property>
+         <obj_property name="ObjectShortName">net_clk</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/res" type="logic">
+         <obj_property name="ElementShortName">res</obj_property>
+         <obj_property name="ObjectShortName">res</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/cell_clk" type="logic">
+         <obj_property name="ElementShortName">cell_clk</obj_property>
+         <obj_property name="ObjectShortName">cell_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/level_reached" type="logic">
+         <obj_property name="ElementShortName">level_reached</obj_property>
+         <obj_property name="ObjectShortName">level_reached</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/cell_start" type="logic">
+         <obj_property name="ElementShortName">cell_start</obj_property>
+         <obj_property name="ObjectShortName">cell_start</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/cell_start_delayed" type="logic">
+         <obj_property name="ElementShortName">cell_start_delayed</obj_property>
+         <obj_property name="ObjectShortName">cell_start_delayed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/fifo_data" type="array">
+         <obj_property name="ElementShortName">fifo_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_data[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/atm_data" type="array">
+         <obj_property name="ElementShortName">atm_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">atm_data[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/fifo_read_enab" type="logic">
+         <obj_property name="ElementShortName">fifo_read_enab</obj_property>
+         <obj_property name="ObjectShortName">fifo_read_enab</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/cur_state" type="other">
+         <obj_property name="ElementShortName">cur_state</obj_property>
+         <obj_property name="ObjectShortName">cur_state</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/lzg_data" type="array">
+         <obj_property name="ElementShortName">lzg_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">lzg_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/lzg_cnt" type="array">
+         <obj_property name="ElementShortName">lzg_cnt[5:0]</obj_property>
+         <obj_property name="ObjectShortName">lzg_cnt[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/out_path_tb/mut/lzg_start" type="logic">
+         <obj_property name="ElementShortName">lzg_start</obj_property>
+         <obj_property name="ObjectShortName">lzg_start</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
