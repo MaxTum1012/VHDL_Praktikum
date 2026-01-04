@@ -23,6 +23,9 @@ type MemType is array(MemAddrType) of Byte;
 subtype PtrType is std_logic_vector(ld_depth downto 0);             --length of write_data1 : 1 + log_2(N)
 --Dynamic memory instantiation
 signal Mem : MemType := (others => (others => '0'));
+--Attributes to make synthesis generate FIFO as FlipFlops -> otherwise: Optimized to RAM-Memory Cells
+attribute ram_style : string;
+attribute ram_style of Mem : signal is "registers";
 --Memory pointer declaration
 signal write_data1 : PtrType := (others => '0');           
 signal read_data2  : PtrType := (others => '0');

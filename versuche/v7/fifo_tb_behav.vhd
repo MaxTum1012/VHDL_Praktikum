@@ -7,10 +7,20 @@ END fifo_tb;
 
 ARCHITECTURE stimul OF fifo_tb IS
 
-	-- Component declaration
+	component fifo
+	    generic (ld_depth : integer := 3;
+                 level    : integer := 5);
+	    port(data_in : in std_logic_vector(7 downto 0);                    --data_in = data1
+          we, re, res :  in std_logic;                                  --write_enable, read_enable, reset
+          clk_in, clk_out : in std_logic;                               --clk_in = clk1, clk_out = clk2
+          empty, full : out std_logic;                                  -- signals for storage volume of FIFO
+          level_reached : out std_logic;                                --if '1' then data stored in Memory will be read from read_ptr
+          data_out : out std_logic_vector(7 downto 0));
+    end component;
 	
-	SIGNAL clk1,clk2,res :std_logic := '0';
-	SIGNAL we,re :std_logic := '0';
+	
+	SIGNAL clk1,clk2,res : std_logic := '0';
+	SIGNAL we,re         : std_logic := '0';
 	SIGNAL full,empty,lr : std_logic;
 	SIGNAL data1, data2 : std_logic_vector (7 DOWNTO 0):="00000000";       --MB: data_in = data_1, data_out = data_2
 	CONSTANT t1 : time := 25 ns;
@@ -19,7 +29,9 @@ ARCHITECTURE stimul OF fifo_tb IS
 BEGIN
 
 	-- Component instantiation
-	mut: entity work.fifo(Behavioral)
+	mut: fifo
+	     generic map(ld_depth => 3,
+	                 level => 5)
 	     port map (data_in => data1, data_out => data2,
 	               we => we, re => re, res => res, 
 	               clk_in => clk1, clk_out => clk2, 
