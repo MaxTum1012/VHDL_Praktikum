@@ -18,8 +18,7 @@ begin
         if res = '1' then
             internal_reg <= (others => '0');
         else
-            temp_bit <= d_in;
-            internal_reg(7 downto 0) <= internal_reg(6 downto 0) & temp_bit;
+            internal_reg(7 downto 0) <= internal_reg(6 downto 0) & d_in;
         end if;
 	end if;
   end process r;
