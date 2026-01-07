@@ -27,8 +27,8 @@ begin
             ready_sig <= '1';
         elsif ready_sig = '1' then
             data_cnt <= std_logic_vector(unsigned(data_cnt) + 1);
-            if to_integer(unsigned(data_cnt)) = 375 then
-                data_cnt <= (others => '0');
+            if to_integer(unsigned(data_cnt)) = 376 then
+                data_cnt <= std_logic_vector(to_unsigned(1, 9));
             end if;
         end if;
     end if;
