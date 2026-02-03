@@ -99,7 +99,7 @@ when last_byte =>
     else
         next_state <= head_write;
     end if;
-when others => null;
+when others => null;        --prevent latches
 end case;
 
 --output logic
